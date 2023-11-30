@@ -1,5 +1,5 @@
 
-  # locofy-html-css-project
+  # Mental-Health-Counseling-Website-Homepage-Template
 
   Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
 
