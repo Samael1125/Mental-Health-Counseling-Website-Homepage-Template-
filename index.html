@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Road Rage:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Serif:wght@400&display=swap"
+    />
+    <script>
+      // JavaScript to handle the scroll and header behavior
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        var header = document.querySelector(".top-bar");
+  
+        if (prevScrollpos > currentScrollPos) {
+          header.style.top = "0";
+        } else {
+          header.style.top = "-80px"; // Adjust this value to hide more or less of the header
+        }
+  
+        prevScrollpos = currentScrollPos;
+      };
+
+      document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", revealOnScroll);
+
+  function revealOnScroll() {
+    var reveals = document.querySelectorAll(".slide-up");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var revealTop = reveals[i].getBoundingClientRect().top;
+      var revealPoint = 50;
+
+      if (revealTop < windowHeight - revealPoint) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+});
+
+
+
+
+    </script>
+  </head>
+  <body>
+    <div class="desktop-2">
+      <div class="top-bar">
+        <div class="navigation">
+          <div class="tab">Home</div>
+          <div class="tab">About</div>
+          <div class="tab">Advice</div>
+          <div class="tab">Contact</div>
+          <div class="tab">FAQ</div>
+          <div class="textfield">
+            <div class="text">Search in site</div>
+            <img class="ic-search-icon" alt="" src="./public/icsearch.svg" />
+          </div>
+        </div>
+        <div class="title">YourOwnCounselor</div>
+        <img
+          class="img-20231113-124641-1-icon"
+          alt=""
+          src="./public/img-20231113-124641-1@2x.png"
+        />
+      </div>
+      <div id="section1" class="img-20231113-131628-1-parent">
+        <img
+          class="img-20231113-131628-1-icon"
+          alt=""
+          src="./public/img-20231113-131628-1@2x.png"
+        />
+
+        <div class="container">
+          <b class="title1">Welcome to Mental Health Counseling</b>
+          <div class="description">Providing support and guidance</div>
+          <div class="input">
+            <div class="textfield1">
+              <div class="text1">Enter your email address</div>
+            </div>
+          </div>
+          <div class="button">
+            <div class="seconday">
+              <div class="title2">Learn More</div>
+            </div>
+            <div class="primary">
+              <div class="title2">Subscribe</div>
+            </div>
+          </div>
+          <div class="tab-group">
+            <div class="tab5">
+              <div class="title4">Services</div>
+            </div>
+            <div class="tab5">
+              <div class="title4">Therapists</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slide-up istockphoto-1452736789-170667a-parent">
+        <img
+          class="istockphoto-1452736789-170667a-icon"
+          alt=""
+          src="./public/istockphoto1452736789170667a-1@2x.png"
+        />
+
+        <div class="anxiety-and-depression-container">
+          <ul class="anxiety-and-depression-relatio">
+            <li class="anxiety-and-depression">Anxiety and Depression</li>
+            <li class="anxiety-and-depression">Relationships issues</li>
+            <li class="anxiety-and-depression">
+              Relationships Substance Abuse
+            </li>
+            <li>Parenting issues</li>
+          </ul>
+        </div>
+        <div class="traumaabuseptsd-grief-and-container">
+          <ul class="anxiety-and-depression-relatio">
+            <li class="anxiety-and-depression">Trauma/Abuse/PTSD</li>
+            <li class="anxiety-and-depression">Grief and Bereavement</li>
+            <li class="anxiety-and-depression">Phase of Life Transition</li>
+            <li>Work-related Stress</li>
+          </ul>
+        </div>
+        <div class="why-we-are-parent">
+          <div class="why-we-are-container">
+            <p class="why-we-are">WHY WE ARE</p>
+          </div>
+          <div class="tell-us-and">Tell us and we shall find you a way.</div>
+          <div class="discover-a-path">
+            Discover a path to well-being with our counseling service,
+            adressing:
+          </div>
+        </div>
+      </div>
+      <div class="slide-up img-20231113-145828-1-parent">
+        <img
+          class="img-20231113-145828-1-icon"
+          alt=""
+          src="./public/img-20231113-145828-1@2x.png"
+        />
+
+        <div class="discover-more-wrapper">
+          <div class="discover-more">Discover More</div>
+        </div>
+        <div class="individual-therapy-parent">
+          <div class="individual-therapy">Individual Therapy</div>
+          <div class="elevate-your-well-being">
+            Elevate Your Well-Being Through Individual Therapy
+          </div>
+        </div>
+        <div class="what-we-do">WHAT WE DO</div>
+        <div class="the-best-counseling">
+          The best counseling from the best Psychologists.
+        </div>
+        <div class="elevate-your-well-being1">
+          Elevate Your Well-Being with Unrivaled Counseling from the Finest
+          Psychologists and Devoted Therapists. Our Experts, including Leading
+          Psychologists and Skilled Therapists, are Committed to Providing the
+          Highest Standard of Care, Tailored to Your Unique Needs. Choose the
+          Best, Choose a Path to Positive Mental Health and Fulfillment.
+        </div>
+        <div class="group-therapy-parent">
+          <div class="group-therapy">Group therapy</div>
+          <div class="embrace-growth-and">
+            Embrace Growth and Connection in our Group Therapy Sessions.
+          </div>
+        </div>
+        <div class="couple-therapy-parent">
+          <div class="couple-therapy">Couple therapy</div>
+          <div class="couple-therapy-for">
+            Couple Therapy for Enhanced Communication and
+            Relationship Resilience.
+          </div>
+        </div>
+        <div class="child-therapy-parent">
+          <div class="child-therapy">Child therapy</div>
+          <div class="child-therapy-for">
+            Child Therapy for Emotional Well-Being.
+          </div>
+        </div>
+      </div>
+      <div class="slide-up section">
+        <div class="container1">
+          <b class="title6">Client Testimonials</b>
+          <div class="description1">Read what our clients have to say</div>
+          <div class="button1">
+            <div class="seconday">
+              <div class="title2">Write a Review</div>
+            </div>
+            <div class="primary">
+              <div class="title2">Read More</div>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <div class="card">
+            <div class="user">
+              <div class="avatar">
+                <div class="avatar1">
+                  <img
+                    class="img-20231113-154859-1-icon"
+                    alt=""
+                    src="./public/img-20231113-154859-1@2x.png"
+                  />
+                </div>
+                <div class="title-wrapper">
+                  <div class="title9">Emily Johnson</div>
+                </div>
+              </div>
+              <img
+                class="user-child"
+                alt=""
+                src="./public/frame-427318817.svg"
+              />
+            </div>
+            <div class="title10">
+              Excellent counseling service. Highly recommended!
+            </div>
+            <div class="icon-buttons">
+              <div class="icon">👍</div>
+              <div class="icon">👏</div>
+              <div class="icon">💬</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="user">
+              <div class="avatar">
+                <div class="avatar1">
+                  <img
+                    class="img-20231113-154825-1-icon"
+                    alt=""
+                    src="./public/img-20231113-154825-1@2x.png"
+                  />
+                </div>
+                <div class="title-wrapper">
+                  <div class="title9">Michael Thompson</div>
+                </div>
+              </div>
+              <img
+                class="user-child"
+                alt=""
+                src="./public/frame-427318817.svg"
+              />
+            </div>
+            <div class="title10">
+              Great therapists, really helped me overcome my anxiety.
+            </div>
+            <div class="icon-buttons">
+              <div class="icon">👍</div>
+              <div class="icon">👏</div>
+              <div class="icon">💬</div>
+            </div>
+          </div>
+        </div>
+        <img class="section-child" alt="" src="./public/vector-200.svg" />
+      </div>
+      <div class="slide-up img-20231113-161106-1-parent">
+        <img
+          class="img-20231113-161106-1-icon"
+          alt=""
+          src="./public/img-20231113-161106-1@2x.png"
+        />
+
+        <img
+          class="img-20231113-161243-1-icon"
+          alt=""
+          src="./public/img-20231113-161243-1@2x.png"
+        />
+
+        <img
+          class="img-20231113-161159-1-icon"
+          alt=""
+          src="./public/img-20231113-161159-1@2x.png"
+        />
+
+        <img
+          class="img-20231113-161226-1-icon"
+          alt=""
+          src="./public/img-20231113-161226-1@2x.png"
+        />
+
+        <nav ><a href="#form"><div class="yourowncounselor-wrapper">
+          <div class="yourowncounselor">YourOwnCounselor</div>
+        </div></a></nav>
+        <div class="meet-our-psychologist">MEET OUR PSYCHOLOGIST</div>
+        <div class="expert-and-professional-container">
+          <p class="expert-and-professional">
+            Expert and Professional in Psychotherapy.
+          </p>
+        </div>
+        <div class="at-yourowncounselor-excellenc-container">
+          <span>At </span>
+         <span class="yourowncounselor1" >YourOwnCounselor</span>
+          <span
+            >, excellence is not just a standard; it's our commitment. Our team
+            of counselors stands out as the best, bringing a wealth of
+            experience, empathy, and a dedication to your well-being. With a
+            focus on personalized care and evidence-based practices, our
+            counselors are here to guide you through your unique journey with
+            expertise and compassion. Choose the best for your mental health –
+            choose
+          </span>
+          <span class="yourowncounselor1">YourOwnCounselor</span>
+          <span>.</span>
+        </div>
+      </div>
+      <div class="section1" id="from">
+        <img class="section-item" alt="" src="./public/vector-2001.svg" />
+
+        <div class="container2">
+          <div class="input1">
+            <div class="title13">Name</div>
+            <div class="textfield2">
+              <div class="text1">Name</div>
+            </div>
+          </div>
+          <div class="input2">
+            <div class="input3">
+              <div class="title13">Phone</div>
+              <div class="textfield2">
+                <div class="text1">Phone</div>
+              </div>
+            </div>
+            <div class="title13">Email</div>
+            <div class="textfield2">
+              <div class="text1">Email</div>
+            </div>
+            <div class="info">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="input4">
+            <div class="title13">Telegram No.</div>
+            <div class="textfield2">
+              <div class="text1">Your Registered Telegram No.</div>
+            </div>
+          </div>
+          <div class="input5">
+            <div class="title13">Advice For Us</div>
+            <div class="textfield6">
+              <div class="text6">Your Advice For Us To Find Your Counselor</div>
+            </div>
+          </div>
+          <div class="button2">
+            <div class="primary2">
+              <div class="yourowncounselor3">YourOwnCounselor</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-up get-an-appointment-container">
+        <p class="get-an-appointment">GET AN APPOINTMENT</p>
+        <p class="get-care-from">Get care from the people who care.</p>
+      </div>
+      <div class="title18">YourOwnCounselor</div>
+      <img
+        class="img-20231113-124641-1-icon1"
+        alt=""
+        src="./public/img-20231113-124641-1@2x.png"
+      />
+
+      <div class="slide-up desktop-2-inner">
+        <div class="privacy-policy-parent">
+          <div class="privacy-policy">Privacy Policy</div>
+          <div class="terms-conditions">Terms & Conditions</div>
+          <div class="yourowncounselor4">
+            <span>
+              <span>© 2023</span>
+              <span class="span"> </span>
+            </span>
+            <span class="yourowncounselor5">YourOwnCounselor</span>
+          </div>
+        </div>
+      </div>
+      <img
+        class="whatsapp-image-2023-11-21-at-2"
+        alt=""
+        src="./public/whatsapp-image-20231121-at-2257-1@2x.png"
+      />
+    </div>
+  </body>
+</html>
